@@ -5,22 +5,30 @@ This repository is dedicated to maintaining important packages that are not avai
 ## How to Use
 
 1. Add the following lines to your `/etc/pacman.conf` file:
- 
+
+```
 [dawfukfr]
 Server = https://dawfukfr.github.io/my_repo/x86_64
+```
 
 2. Import the repository key:
- 
+
+```
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 2B4541CB1E00B4FA0460F0BD6866ACE0590E73BB
 sudo pacman-key --lsign-key 2B4541CB1E00B4FA0460F0BD6866ACE0590E73BB
+```
 
 3. Update your package list:
- 
+
+```
 sudo pacman -Sy
+```
 
 4. Install packages from this repository using:
- 
+
+```
 sudo pacman -S package_name
+```
 
 ## Contributing
 
